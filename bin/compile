@@ -127,7 +127,7 @@ function apt_install(){
   
   export PATH="$PATH:$BUILD_DIR/.apt/usr/bin"
   export LD_LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu:$BUILD_DIR/.apt/usr/lib"
-  export LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu:$BUILD_DIR/.apt/usr/lib:$LIBRARY_PATH"
+  export LIBRARY_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu:$BUILD_DIR/.apt/usr/lib"
   export INCLUDE_PATH="$BUILD_DIR/.apt/usr/include:$INCLUDE_PATH"
   export CPATH="$INCLUDE_PATH"
   export CPPPATH="$INCLUDE_PATH"
