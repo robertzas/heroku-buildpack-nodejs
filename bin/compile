@@ -80,6 +80,14 @@ function topic() {
   echo "-----> $*"
 }
 
+function indent() {
+  c='s/^/       /'
+  case $(uname) in
+    Darwin) sed -l "$c";;
+    *)      sed -u "$c";;
+  esac
+}
+
 # based on ddollar/heroku-buildpack-apt which is deprecated
 function apt_install(){
   echo "Install package"
