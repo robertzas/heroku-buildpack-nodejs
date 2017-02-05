@@ -76,7 +76,9 @@ list_node_config | output "$LOG_FILE"
 install_bins() {
 #DotnetCore
 
-
+function topic() {
+  echo "-----> $*"
+}
 
 # based on ddollar/heroku-buildpack-apt which is deprecated
 function apt_install(){
